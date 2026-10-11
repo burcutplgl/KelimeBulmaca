@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kelime Bulmaca</title>
+
+</head>
+<body>
+  <!-- bildirim mesajları -->
+<div id="toast-container">
+    <!-- <p class="toast">Kelime Listede Yok!</p> -->
+</div>
+
+  <!-- ana oyun containeri -->
+   <main>
+    <header>
+        <h1>KELİME <span>BULMACA</span></h1>
+    </header>
+      <!-- oyun tahtası 6 satır x 5 sütun -->
+       <section id="board">
+        <!-- <div class="board-row shake">
+            <div class="tile active">K</div>
+            <div class="tile correct">A</div>
+            <div class="tile present">L</div>
+            <div class="tile absent">E</div>
+            <div class="tile pop flip">M</div>
+        </div> -->
+        
+       </section>
+
+       <!-- ekran klavyesi-->
+       <section id="keyboard">
+        <!-- <div class="keyboard-row ">
+            <button type="button"class="key wide-key">E</button>
+             <button type="button"class="key correct">R</button>
+              <button type="button"class="key present">T</button>
+               <button type="button" class="key absent">Y</button>
+        </div> -->
+       </section>
+   </main>
+
+    <!-- oyun bitişi kartı(modal) -->
+     <div id="modal-overlay" class="modal-overlay
+     hidden">
+     <div class="modal-card">
+        <div id="modal-icon">🎉</div>
+        <h2 id="modal-title">Tebrikler!</h2>
+        <p id="modal-message">Gizli kelimeyi buldun!</p>
+       
+        <div class="modal-actions">
+          <button id="btn-restart" class="btn btn-secondary">Yeniden Oyna 🔃</button>
+        </div>
+     </div>
+    </div>
+
+   <script src="script.js"></script> 
+</body>
+</html>
